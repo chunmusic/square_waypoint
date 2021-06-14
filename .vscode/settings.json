@@ -9,7 +9,8 @@
         "tuple": "cpp",
         "type_traits": "cpp",
         "utility": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "unordered_set": "cpp"
     },
     "python.autoComplete.extraPaths": [
         "/home/pongsakorn/catkin_ws/devel/lib/python2.7/dist-packages",

@@ -408,12 +408,14 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory square_waypoint
 
 # Convenience name for "all" pass in the directory.
+square_waypoint/all: square_waypoint/CMakeFiles/prssuav.dir/all
 square_waypoint/all: square_waypoint/CMakeFiles/square_waypoint.dir/all
 square_waypoint/all: square_waypoint/CMakeFiles/one_unit.dir/all
 
 .PHONY : square_waypoint/all
 
 # Convenience name for "clean" pass in the directory.
+square_waypoint/clean: square_waypoint/CMakeFiles/prssuav.dir/clean
 square_waypoint/clean: square_waypoint/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 square_waypoint/clean: square_waypoint/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 square_waypoint/clean: square_waypoint/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
@@ -463,6 +465,43 @@ square_waypoint/clean: square_waypoint/CMakeFiles/roscpp_generate_messages_cpp.d
 square_waypoint/preinstall:
 
 .PHONY : square_waypoint/preinstall
+
+#=============================================================================
+# Target rules for target square_waypoint/CMakeFiles/prssuav.dir
+
+# All Build rule for target.
+square_waypoint/CMakeFiles/prssuav.dir/all:
+	$(MAKE) -f square_waypoint/CMakeFiles/prssuav.dir/build.make square_waypoint/CMakeFiles/prssuav.dir/depend
+	$(MAKE) -f square_waypoint/CMakeFiles/prssuav.dir/build.make square_waypoint/CMakeFiles/prssuav.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pongsakorn/square_waypoint/build/CMakeFiles --progress-num=14,15 "Built target prssuav"
+.PHONY : square_waypoint/CMakeFiles/prssuav.dir/all
+
+# Include target in all.
+all: square_waypoint/CMakeFiles/prssuav.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+square_waypoint/CMakeFiles/prssuav.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pongsakorn/square_waypoint/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 square_waypoint/CMakeFiles/prssuav.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pongsakorn/square_waypoint/build/CMakeFiles 0
+.PHONY : square_waypoint/CMakeFiles/prssuav.dir/rule
+
+# Convenience name for target.
+prssuav: square_waypoint/CMakeFiles/prssuav.dir/rule
+
+.PHONY : prssuav
+
+# clean rule for target.
+square_waypoint/CMakeFiles/prssuav.dir/clean:
+	$(MAKE) -f square_waypoint/CMakeFiles/prssuav.dir/build.make square_waypoint/CMakeFiles/prssuav.dir/clean
+.PHONY : square_waypoint/CMakeFiles/prssuav.dir/clean
+
+# clean rule for target.
+clean: square_waypoint/CMakeFiles/prssuav.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target square_waypoint/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
@@ -1399,7 +1438,7 @@ clean: square_waypoint/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/clean
 square_waypoint/CMakeFiles/square_waypoint.dir/all:
 	$(MAKE) -f square_waypoint/CMakeFiles/square_waypoint.dir/build.make square_waypoint/CMakeFiles/square_waypoint.dir/depend
 	$(MAKE) -f square_waypoint/CMakeFiles/square_waypoint.dir/build.make square_waypoint/CMakeFiles/square_waypoint.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pongsakorn/square_waypoint/build/CMakeFiles --progress-num=14,15 "Built target square_waypoint"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pongsakorn/square_waypoint/build/CMakeFiles --progress-num=16,17 "Built target square_waypoint"
 .PHONY : square_waypoint/CMakeFiles/square_waypoint.dir/all
 
 # Include target in all.

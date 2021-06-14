@@ -285,6 +285,19 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named prssuav
+
+# Build rule for target.
+prssuav: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 prssuav
+.PHONY : prssuav
+
+# fast build rule for target.
+prssuav/fast:
+	$(MAKE) -f square_waypoint/CMakeFiles/prssuav.dir/build.make square_waypoint/CMakeFiles/prssuav.dir/build
+.PHONY : prssuav/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_py
 
 # Build rule for target.
@@ -852,6 +865,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... prssuav"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_eus"

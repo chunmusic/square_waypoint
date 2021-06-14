@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+square_waypoint/CMakeFiles/prssuav.dir/rule:
+	cd /home/pongsakorn/square_waypoint/build && $(MAKE) -f CMakeFiles/Makefile2 square_waypoint/CMakeFiles/prssuav.dir/rule
+.PHONY : square_waypoint/CMakeFiles/prssuav.dir/rule
+
+# Convenience name for target.
+prssuav: square_waypoint/CMakeFiles/prssuav.dir/rule
+
+.PHONY : prssuav
+
+# fast build rule for target.
+prssuav/fast:
+	cd /home/pongsakorn/square_waypoint/build && $(MAKE) -f square_waypoint/CMakeFiles/prssuav.dir/build.make square_waypoint/CMakeFiles/prssuav.dir/build
+.PHONY : prssuav/fast
+
+# Convenience name for target.
 square_waypoint/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
 	cd /home/pongsakorn/square_waypoint/build && $(MAKE) -f CMakeFiles/Makefile2 square_waypoint/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : square_waypoint/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
@@ -824,6 +839,33 @@ src/one_unit.cpp.s:
 	cd /home/pongsakorn/square_waypoint/build && $(MAKE) -f square_waypoint/CMakeFiles/one_unit.dir/build.make square_waypoint/CMakeFiles/one_unit.dir/src/one_unit.cpp.s
 .PHONY : src/one_unit.cpp.s
 
+src/prssuav.o: src/prssuav.cpp.o
+
+.PHONY : src/prssuav.o
+
+# target to build an object file
+src/prssuav.cpp.o:
+	cd /home/pongsakorn/square_waypoint/build && $(MAKE) -f square_waypoint/CMakeFiles/prssuav.dir/build.make square_waypoint/CMakeFiles/prssuav.dir/src/prssuav.cpp.o
+.PHONY : src/prssuav.cpp.o
+
+src/prssuav.i: src/prssuav.cpp.i
+
+.PHONY : src/prssuav.i
+
+# target to preprocess a source file
+src/prssuav.cpp.i:
+	cd /home/pongsakorn/square_waypoint/build && $(MAKE) -f square_waypoint/CMakeFiles/prssuav.dir/build.make square_waypoint/CMakeFiles/prssuav.dir/src/prssuav.cpp.i
+.PHONY : src/prssuav.cpp.i
+
+src/prssuav.s: src/prssuav.cpp.s
+
+.PHONY : src/prssuav.s
+
+# target to generate assembly for a file
+src/prssuav.cpp.s:
+	cd /home/pongsakorn/square_waypoint/build && $(MAKE) -f square_waypoint/CMakeFiles/prssuav.dir/build.make square_waypoint/CMakeFiles/prssuav.dir/src/prssuav.cpp.s
+.PHONY : src/prssuav.cpp.s
+
 src/square_waypoint.o: src/square_waypoint.cpp.o
 
 .PHONY : src/square_waypoint.o
@@ -861,6 +903,7 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
+	@echo "... prssuav"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
@@ -909,6 +952,9 @@ help:
 	@echo "... src/one_unit.o"
 	@echo "... src/one_unit.i"
 	@echo "... src/one_unit.s"
+	@echo "... src/prssuav.o"
+	@echo "... src/prssuav.i"
+	@echo "... src/prssuav.s"
 	@echo "... src/square_waypoint.o"
 	@echo "... src/square_waypoint.i"
 	@echo "... src/square_waypoint.s"

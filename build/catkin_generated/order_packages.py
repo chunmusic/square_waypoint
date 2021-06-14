@@ -2,4 +2,4 @@
 source_root_dir = '/home/pongsakorn/square_waypoint/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/pongsakorn/square_waypoint/devel;/home/pongsakorn/catkin_ws/devel;/opt/ros/melodic'.split(';') if '/home/pongsakorn/square_waypoint/devel;/home/pongsakorn/catkin_ws/devel;/opt/ros/melodic' != '' else []
+underlay_workspaces = '/home/pongsakorn/catkin_ws/devel;/opt/ros/melodic'.split(';') if '/home/pongsakorn/catkin_ws/devel;/opt/ros/melodic' != '' else []

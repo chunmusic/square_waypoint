@@ -135,7 +135,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(square_waypoint src/square_waypoint.cpp)
 add_executable(one_unit src/one_unit.cpp)
-
+add_executable(prssuav src/prssuav.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -154,6 +154,11 @@ target_link_libraries(square_waypoint
 target_link_libraries(one_unit
   ${catkin_LIBRARIES}
 )
+
+target_link_libraries(prssuav
+  ${catkin_LIBRARIES}
+)
+
 
 #############
 ## Install ##
