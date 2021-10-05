@@ -138,6 +138,7 @@ add_executable(square_waypoint src/square_waypoint.cpp)
 add_executable(one_unit src/one_unit.cpp)
 add_executable(prssuav src/prssuav.cpp)
 add_executable(qav250 src/qav250.cpp)
+add_executable(fullmodel src/fullmodel.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -163,6 +164,10 @@ target_link_libraries(qav250
 )
 
 target_link_libraries(prssuav
+  ${catkin_LIBRARIES}
+)
+
+target_link_libraries(fullmodel
   ${catkin_LIBRARIES}
 )
 
