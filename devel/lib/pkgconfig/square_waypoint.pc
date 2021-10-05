@@ -1,8 +1,0 @@
-prefix=/home/pongsakorn/square_waypoint/devel
-
-Name: square_waypoint
-Description: Description of square_waypoint
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

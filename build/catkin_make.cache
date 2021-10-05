@@ -1,2 +1,0 @@
-square_waypoint
--DCATKIN_DEVEL_PREFIX=/home/pongsakorn/square_waypoint/devel -DCMAKE_INSTALL_PREFIX=/home/pongsakorn/square_waypoint/install -G Unix Makefiles
