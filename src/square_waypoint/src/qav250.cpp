@@ -97,11 +97,11 @@ void set_offboard(ros::ServiceClient uav0_set_mode_client, ros::ServiceClient ua
 
         uav0_pose.pose.position.x = 0;
         uav0_pose.pose.position.y = 0;
-        uav0_pose.pose.position.z = 0.5;
+        uav0_pose.pose.position.z = 0.3;
         uav0_pose.pose.orientation.x = 0;
         uav0_pose.pose.orientation.y = 0;
-        uav0_pose.pose.orientation.z = 0.707;
-        uav0_pose.pose.orientation.w = 0.707;
+        uav0_pose.pose.orientation.z = 0;
+        uav0_pose.pose.orientation.w = 1;
         uav0_local_pos_pub.publish(uav0_pose);
 
     } 
@@ -122,20 +122,20 @@ int main (int argc, char **argv)
 
     check_connection();
 
-    send_position(20, uav0_local_pos_pub , 0, 0, 0.5, 0, 0 , 0.707, 0.707);
+    send_position(200, uav0_local_pos_pub , 0, 0, 0.3, 0, 0 , 0, 1);
 
     set_offboard(uav0_set_mode_client, uav0_arming_client, uav0_local_pos_pub);
     
-    send_position(200   , uav0_local_pos_pub , 0, 0, 0.5, 0, 0 , 0.707, 0.707);
-    send_position(200, uav0_local_pos_pub , 0, 2, 0.5, 0, 0 , 0.707, 0.707);
-    send_position(200, uav0_local_pos_pub , 0, 2, 0.5, 0, 0 , 1, 0);
-    send_position(200, uav0_local_pos_pub , -2, 2, 0.5, 0, 0 , 1, 0);
-    send_position(200, uav0_local_pos_pub , -2, 2, 0.5, 0, 0 , -0.707, 0.707);
-    send_position(200, uav0_local_pos_pub , -2, 0, 0.5, 0, 0 , -0.707, 0.707);
-    send_position(200, uav0_local_pos_pub , -2, 0, 0.5, 0, 0 , 0, 1);
-    send_position(200, uav0_local_pos_pub , 0, 0, 0.5, 0, 0 , 0, 1);
-    send_position(200, uav0_local_pos_pub , 0, 0, 0.5, 0, 0 , 0.707, 0.707);
-    send_position(200, uav0_local_pos_pub , 0, 0, -0.5, 0, 0 , 0.707, 0.707);
+    send_position(200   , uav0_local_pos_pub , 0, 0, 0.3, 0, 0, 0, 1);
+    send_position(200, uav0_local_pos_pub , 1, 0, 0.3, 0, 0 , 0, 1);
+    send_position(200, uav0_local_pos_pub , 1, 0, 0.3, 0, 0 , 0.707, 0.707);
+    send_position(200, uav0_local_pos_pub , 1, 1, 0.3, 0, 0 , 0.707, 0.707);
+    send_position(200, uav0_local_pos_pub , 1, 1, 0.3, 0, 0 , 1, 0);
+    send_position(200, uav0_local_pos_pub , 0, 1, 0.3, 0, 0 , 1, 0);
+    send_position(200, uav0_local_pos_pub , 0, 1, 0.3, 0, 0 , 0.707, -0.707);
+    send_position(200, uav0_local_pos_pub , 0, 0, 0.3, 0, 0 , 0.707, -0.707);
+    send_position(200, uav0_local_pos_pub , 0, 0, 0.3, 0, 0 , 0, 1);
+    send_position(200, uav0_local_pos_pub , 0, 0, -0.5, 0, 0 , 0, 1);
 
     return 0;
 
